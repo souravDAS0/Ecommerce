@@ -1,0 +1,54 @@
+<section *ngIf="!showLogin" class="container-md border border-dark border-2 rounded p-4 my-4  ">
+    <h2>Seller SignUp</h2>
+    <hr class="hr">
+    <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="my-2">
+        <div class="form-group my-4">
+            <label for="exampleInputName">Name</label>
+            <input type="text" name="name" class="form-control mt-2" id="exampleInputName" ngModel required
+                minlength="3" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group my-4">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" name="email" class="form-control mt-2" id="exampleInputEmail1" ngModel required email
+                aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group my-4">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" name="password" class="form-control mt-2" id="exampleInputPassword1" ngModel required
+                minlength="8" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary mt-2" [disabled]="sellerSignUp.form.invalid">Sign Up</button>
+
+
+        <div class="mt-2">
+            <span>Already have an Account?<a class="link-primary" (click)="toggleLogin()">Click
+                    to Login</a></span>
+        </div>
+
+    </form>
+</section>
+
+<section *ngIf="showLogin" class="container-md border border-dark border-2 rounded p-4 my-4  ">
+    <h2>Seller Login</h2>
+    <hr class="hr">
+    <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)" class="my-2">
+        <div class="form-group my-4">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" name="email" class="form-control mt-2" id="exampleInputEmail1" ngModel required
+                aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group my-4">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" name="password" class="form-control mt-2" id="exampleInputPassword1" ngModel required
+                placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary mt-2" [disabled]="sellerLogin.form.invalid">Login</button>
+        <div class="mt-2 " *ngIf="isAuthError">
+            <p class="text-danger">{{authError}}</p>
+        </div>
+        <div class="mt-2">
+            <span>New to Flipazon?<a class="link-primary" (click)="toggleLogin()">Click to Sign
+                    Up</a></span>
+        </div>
+    </form>
+</section>

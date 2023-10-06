@@ -1,0 +1,38 @@
+<section class="container-md">
+    <h1>Seller Dashboard</h1>
+    <div class="mt-2 ">
+        <p class="text-success">{{productDeletedMessage}}</p>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Color</th>
+                <th scope="col">Category</th>
+                <th scope="col">Specifications</th>
+                <th scope="col">Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <th scope="row">{{product.id}}</th>
+                <td>{{product.productName}}</td>
+                <td>{{product.productPrice}}/-</td>
+                <td>{{product.productColor}}</td>
+                <td>{{product.productCategory}}</td>
+                <td>{{product.productSpecs}}</td>
+                <td><img class="img-fluid" style="width: 40%;" src="{{product.productImage}}" alt="Product Image"></td>
+                <td>
+                    <a routerLink="/seller-update-products/{{product.id}}">
+                        <fa-icon [icon]="editIcon"></fa-icon>
+                    </a>
+                </td>
+                <td>
+                    <fa-icon [icon]="deleteIcon" (click)="deleteProduct(product.id)"></fa-icon>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>

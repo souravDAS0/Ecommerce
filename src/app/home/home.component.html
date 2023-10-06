@@ -1,0 +1,13 @@
+<div class="mt-5">
+    <ngb-carousel *ngIf="popularProducts">
+        <ng-template *ngFor="let product of popularProducts" ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img class="product-header-image" src="{{product.productImage}}" alt="Random first slide" />
+            </div>
+            <div class="carousel-caption">
+                <h3 class="text-dark">First slide label</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>

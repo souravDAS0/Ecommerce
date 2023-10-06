@@ -1,0 +1,60 @@
+<nav class=" navbar navbar-expand-md navbar-dark bg-dark px-2" [ngSwitch]="menuType">
+    <a class="text-light navbar-brand text-uppercase font-weight-bolder" routerLink="/">Flipazon</a>
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button> -->
+
+    <div class="nav navbar-collapse" id="navbarSupportedContent" *ngSwitchCase="'default'">
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/">Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">User</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Cart </a>
+            </li>
+            <div class="vr text-light"></div>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/seller-auth">Seller </a>
+            </li>
+
+
+        </ul>
+        <form class="form-inline form">
+            <input class="form-control mx-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+
+
+    <div class="nav navbar-collapse" id="navbarSupportedContent" *ngSwitchCase="'seller'">
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/">Home </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="seller-home">Product List</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="seller-add-products">Add Products </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="navbar-brand text-white-50">Welcome {{sellerName | titlecase}} </a>
+            </li>
+        </ul>
+        <!-- <div class="vr text-light"></div> -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="btn btn-outline-success" (click)="logout()">Logout </a>
+            </li>
+        </ul>
+
+    </div>
+</nav>

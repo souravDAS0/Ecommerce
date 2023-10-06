@@ -1,0 +1,57 @@
+{
+  "seller": [
+    {
+      "name": "Sourav Das",
+      "email": "sourav@seller.com",
+      "password": "12345@abc",
+      "id": 1
+    },
+    {
+      "name": "Gourav Das",
+      "email": "gd342@seller.com",
+      "password": "32416@abc",
+      "id": 2
+    },
+    {
+      "name": "Sourav Das",
+      "email": "papayd7098@gmail.com",
+      "password": "123456789",
+      "id": 3
+    },
+    {
+      "name": "rohit sharma",
+      "email": "sharma@seller.com",
+      "password": "147258369",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "productName": "Poco X2",
+      "productCategory": "Smartphone",
+      "productColor": "Ocean Blue",
+      "productPrice": 16999,
+      "productSpecs": "Qualcomm SDM730 Snapdragon 730G (8 nm), 128GB 6GB RAM, \tLi-Po 4500 mAh, non-removable battery\n",
+      "productImage": "https://www.phonebunch.com/phone-pictures/xiaomi_poco_x2-3687%20(1).jpg",
+      "id": 1
+    },
+    {
+      "productName": "Realme C12",
+      "productCategory": "Smartphone",
+      "productColor": "Power Blue",
+      "productPrice": 10999,
+      "productSpecs": "Mediatek MT6765G Helio G35 (12 nm),  Octa-core (4x2.3 GHz Cortex-A53 & 4x1.8 GHz Cortex-A53), 32GB 3GB RAM,  Li-Po 6000 mAh, non-removable Battery",
+      "productImage": "https://www.phonebunch.com/phone-pictures/realme_c12-3952%20(1).jpg",
+      "id": 2
+    },
+    {
+      "productName": "Asus Zenfone 10",
+      "productCategory": "Smartphone",
+      "productColor": "Aurora Green",
+      "productPrice": 32999,
+      "productSpecs": "Super AMOLED, 144Hz, HDR10+ DISPLAY , OS\tAndroid 13, Chipset\tQualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm),\nCPU\tOcta-core (1x3.2 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510),\nGPU\tAdreno 740,\nMEMORY - Internal\t128GB 8GB RAM, BATTERY- \tLi-Po 4300 mAh, non-removable",
+      "productImage": "https://fdn2.gsmarena.com/vv/pics/asus/asus-zenfone10-0.jpg",
+      "id": 3
+    }
+  ]
+}
