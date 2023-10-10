@@ -30,7 +30,7 @@
       "productName": "Poco X2",
       "productCategory": "Smartphone",
       "productColor": "Ocean Blue",
-      "productPrice": 16999,
+      "productPrice": 15999,
       "productSpecs": "Qualcomm SDM730 Snapdragon 730G (8 nm), 128GB 6GB RAM, \tLi-Po 4500 mAh, non-removable battery\n",
       "productImage": "https://www.phonebunch.com/phone-pictures/xiaomi_poco_x2-3687%20(1).jpg",
       "id": 1
@@ -52,6 +52,15 @@
       "productSpecs": "Super AMOLED, 144Hz, HDR10+ DISPLAY , OS\tAndroid 13, Chipset\tQualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm),\nCPU\tOcta-core (1x3.2 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510),\nGPU\tAdreno 740,\nMEMORY - Internal\t128GB 8GB RAM, BATTERY- \tLi-Po 4300 mAh, non-removable",
       "productImage": "https://fdn2.gsmarena.com/vv/pics/asus/asus-zenfone10-0.jpg",
       "id": 3
+    },
+    {
+      "productName": "Motorola Edge 40",
+      "productCategory": "Smartphone",
+      "productColor": "Green",
+      "productPrice": "25999",
+      "productSpecs": "DISPLAY -P-OLED, 144Hz, HDR10+, 6.55 inches,\nResolution\t1080 x 2400 pixels, 20:9 ratio (~402 ppi density)\nPLATFORM\tOS\tAndroid 13\nChipset\tMediatek Dimensity 8020 (6 nm)\n256GB 8GB RAM\nMAIN CAMERA\tDual\t50 MP\n13 MP, f/2.2, 120˚ (ultrawide)\nFeatures\tDual-LED flash, HDR, panorama\nBluetooth\t5.2,\nUSB\tUSB Type-C 2.0\nFEATURES\tSensors\tFinge\nBATTERY\tLi-Po 4400 mAh, non-removable\nCharging\t68W wired, 15W wireless",
+      "productImage": "https://fdn2.gsmarena.com/vv/bigpic/motorola-edge-40.jpg",
+      "id": 4
     }
   ]
 }
